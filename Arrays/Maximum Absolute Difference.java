@@ -79,7 +79,7 @@ We can construct two arrays with values: A[i] + i and A[i] - i.
 Then, for the above 2 cases, we find the maximum value possible.
 For that, we just have to store minimum and maximum values of expressions A[i] + i and A[i] - i for all i.*/
 
-public class Solution {
+ class Solution {
     public int maxArr(int[] A) {
         int max1 = Integer.MIN_VALUE;
         int min1 = Integer.MAX_VALUE;
@@ -101,3 +101,6 @@ public class Solution {
         return res;
     }
 }
+
+/* T.C = O(N)
+   S.C = O(1) */
