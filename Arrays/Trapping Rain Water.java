@@ -23,20 +23,20 @@ class Solution {
 
         leftMax[0] = height[0];
         for(int i=1; i<N; i++){
-            leftMax[i] = Math.max(leftMax[i-1],height[i]);
+            leftMax[i] = Math.max(leftMax[i-1],height[i]); //creating leftMax array
         }
 
         int[] rightMax = new int[N];
 
         rightMax[N-1] = height[N-1];
         for(int i=N-2; i>=0; i--){
-            rightMax[i] = Math.max(rightMax[i+1],height[i]);
+            rightMax[i] = Math.max(rightMax[i+1],height[i]); //creating rightMax array
         }
 
         int res = 0;
         for(int i=1; i<N-1; i++){
             int water = Math.min(leftMax[i-1],rightMax[i+1]) - height[i];
-            if(water>0){
+            if(water>0){      //to handle the edge case
                 res += water;
             }
         }
