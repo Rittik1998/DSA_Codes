@@ -49,7 +49,7 @@ More Formally,
 Number of ways to choose from top-left elements (X + 1) * (Y + 1)
 Number of ways to choose from bottom-right elements (N - X) * (N - Y)
 
-More detailed explanation in copy notes : Advanced Arrays-3 
+More detailed explanation in copy notes : Advanced Arrays-2 
 */
 
 
